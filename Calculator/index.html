@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Caluculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <center>
+        <h1 id="heading">Calculator</h1> 
+        
+        <div class="main">
+           <b>First Number  :</b> <input type="number" id="firstNumber"><br><br>
+             <b>Second Number :</b> <input type="number" id="secondNumber"><br><br>
+            <input type="submit" id="sum" value="Sum" onclick="sum()">
+            <input type="submit" id="diff" value="Difference" onclick="diff()">
+            <input type="submit" id="pro" value="Product" onclick="pro()">
+            <input type="submit" id="div" value="Division" onclick="div()">
+        <br><br>
+        <b>Output : </b><span id="output"></span><br><br>
+    </center>
+</div>
+    <script>
+        function sum(){
+            const firstNumber=document.getElementById('firstNumber').value;
+            const secondNumber=document.getElementById('secondNumber').value;
+            document.getElementById('output').innerText=Number(firstNumber)+Number(secondNumber);
+
+        }
+        function diff(){
+            const firstNumber=document.getElementById('firstNumber').value;
+            const secondNumber=document.getElementById('secondNumber').value;
+            document.getElementById('output').innerText=Number(firstNumber)-Number(secondNumber);
+
+        }
+        function pro(){
+            const firstNumber=document.getElementById('firstNumber').value;
+            const secondNumber=document.getElementById('secondNumber').value;
+            document.getElementById('output').innerText=Number(firstNumber)*Number(secondNumber);
+
+        }
+        function div(){
+            const firstNumber=document.getElementById('firstNumber').value;
+            const secondNumber=document.getElementById('secondNumber').value;
+            document.getElementById('output').innerText=Number(firstNumber)/Number(secondNumber);
+
+        }
+    </script>
+    <br><br><br><br><br><br><br><br>
+    <address id="address">
+        <b>
+        Pyarasani Srinivas <br>
+        208r1a05m4@gmail.com
+    </b>
+    </address>
+</body>
+</html>
